@@ -1,0 +1,32 @@
+/*****Autres graphiques*****/
+@font-face {
+    font-family: "Evil Empire";
+    src: local("Evil Empire"),
+    url("Evil Empire");
+}
+body{
+    font-family: "Evil Empire";
+    background-color: #cccccc;
+}
+.autre{
+    display: flex;
+    justify-content: center;
+}
+a:link{
+    text-decoration: none;
+    color: #fc892c;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    text-shadow: 2px 2px 2px #a11e1e;
+}
+a:visited{
+    text-decoration: none;
+    color: #fc892c;
+}
+a:hover{
+    text-decoration: none;
+    color: #a11e1e;
+    text-shadow: 1px 1px 2px #fc892c;
+}
+ /***** fin autres graphiques*****/

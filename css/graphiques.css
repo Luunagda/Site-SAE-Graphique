@@ -1,0 +1,346 @@
+html{
+  width: 100%;
+  margin: 0;
+}
+body{
+  margin: 0;
+  background-color: #cccccc;
+  width: 100%;
+  background-repeat: no-repeat;
+  font-family: "Evil Empire";
+  overflow: scroll;
+  height: 300px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+p{
+  font-size: 2em;
+  color: #fc892c;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  text-shadow: 1px 1px 1px #a11e1e;
+}
+
+/*****Nav bar*****/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+nav{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fc892c;
+  /*#397EB7*/
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+@font-face {
+  font-family: "Evil Empire";
+  src: local("Evil Empire"),
+  url("Evil Empire");
+}
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+  /*line-height: 40px;*/
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+}
+nav ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  display: block;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #cccccc;
+ 
+}
+nav a:hover {
+  background-color: #a11e1e;
+  color: #fc892c;
+  border-bottom: 2px solid #cccccc;
+}
+.sous{
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  background-color: #fc892c;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid #fc892c
+}
+nav > ul li:hover .sous{
+  display: block;
+}
+.sous li{
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.sous a{
+  padding: 10px;
+  border-bottom: none;
+}
+.sous a:hover{
+  border-bottom: 2px solid #cccccc
+}
+
+.deroulant > a::after{
+  content: " ▼";
+  font-size: 12px;
+}
+
+/*****Nav bar*****/
+
+
+
+
+/*****header*****/
+
+.header{
+  width: 100%;
+  display: flex;
+}
+
+.div-popcorn1{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popcorn1{
+  width: 100%;
+}
+.div-ticket{
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  left: 11%;
+}
+.ticket{
+  width: 60%;
+  height: 55%;
+}
+.div-boisson1{
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 5%;
+}
+.boisson1{
+  width: 100%;
+}
+/*****fin header*****/
+
+
+
+
+
+/*****Bande de film haut*****/
+
+.div-gif_coulissant {
+  position: relative;  
+}
+.bande_vierge, .bande_footer, .salle_cinema{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.camembert{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3%;
+  padding-right: 2%;
+}
+
+.patern{
+  position: absolute;  
+  width: 19.4%;
+  left: 40.7%;
+  top: 16%;
+  z-index: 2;
+ 
+}
+.patern1{
+  position: absolute;  
+  z-index: 2;
+  width: 19.4%;
+  top: 16%;
+  /*top: 442px;  left: 40.7%; */
+}
+.patern2{
+  position: absolute;  
+  z-index: 2;
+  width: 18.5%;
+  top: 16.3%;
+  left: 81.4%; 
+ 
+}
+/*****Fin bande de film haut*****/
+
+
+
+
+
+/*****nationalité*****/
+
+.nationalite{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+#mapmonde {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+/*****fin nationalité*****/
+
+
+
+
+
+
+/*****matériel*****/
+
+.materiel{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.div-clap{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  position: absolute;
+}
+.clap{
+  top: 1%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  right: 47%;
+}
+.camera{
+  width: 50%;
+  left: 55%;
+  position: absolute;
+  top: 50%;
+}
+#chartHolder{
+  z-index: 5;
+  position: relative;
+  width: 10%;
+  top: 290px;
+  left: 50%;
+}
+.rond{
+  position: relative;
+  padding-top: 7.4%;
+  left: 25.9%;
+  z-index: 2;
+}
+
+.div-disque{
+  width: 100%;
+  position: relative;
+  top: 250%;
+  right: 25%;
+}
+.disque{
+  top: 30px;
+  width: 40%;
+  left: 55%;
+  position: absolute;
+  z-index: 1;
+}
+#dots{
+  position: relative;
+  z-index: 3;
+  padding-top: 35%;
+  padding-left: 5%;
+}
+
+
+/*****fin matériel*****/
+
+
+
+
+
+
+/*****salle cinéma*****/
+.div-salle_cinema{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-top: 40%;
+  padding-bottom: 3%;
+  position: relative;
+  margin-top: 30%;
+  z-index: 1;
+}
+.salle_cinema{
+  position: absolute;
+}
+.ligne{
+  position: relative;
+  z-index: 2;
+  left: 17%;
+}
+/*****fin salle cinéma*****/
+
+
+
+#titrelongueur{
+  position: relative;
+  top: 100%;
+}
+#titre{
+  position: relative;
+  top: 100%;
+}
+
+
+/*****footer*****/
+.div-bande_footer{
+  position: relative;
+  margin-top: 30%;
+}
+.boisson2{
+  position: absolute;
+  width: 20%;
+  padding-left: 78%;
+}
+.popcorn2{
+  position: absolute;
+  width: 19%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5%;
+}
+/*****fin footer*****/

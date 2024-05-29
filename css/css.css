@@ -1,0 +1,15 @@
+#chart {
+    width: 40%;
+
+}
+#chart1 {
+    width: 40%;
+
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+}

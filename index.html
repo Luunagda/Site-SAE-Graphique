@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphiques de films</title>
+    <link rel="stylesheet" href="css/graphiques.css">
+    <link rel="icon" href="img/etoile.png" >
+    <script src="LicenseKey/KoolChartLicense.js"></script>
+    <script src="KoolChart/JS/KoolChart.js"></script>
+    <link rel="stylesheet" href="KoolChart/Assets/Css/KoolChart.css"/>
+  </head>
+<body>
+  
+  <nav>
+      <ul>
+        <li class="deroulant"><a href="#">Graphiques</a>
+          <ul class="sous">
+            <li><a href="#top10">Top 10</a></li>
+            <li><a href="#mapmonde">Map monde (Graphiques enchaînés)</a></li>
+            <li><a href="#pourcentageSortie">Pourcentage de sortie</a></li>
+            <li><a href="#ligne">Croissance du nombre d'entrées</a></li>
+            <li><a href="#titrelongueur">Longueur des titres</a></li>
+            <li><a href="autre.html">Autre graphique</a></li>
+          </ul>
+        </li>
+      </ul>
+  </nav>
+
+  <div class="header">
+    <div class="div-boisson1">
+      <img src="gif/boisson.gif" class="boisson1" alt="boisson">
+    </div>
+    <div class="div-ticket">
+      <img src="img/ticket2.png" class="ticket" alt="ticket">
+    </div>
+    <div class="div-popcorn1">
+      <img src="gif/popcorn.gif" class="popcorn1" alt="pop corn">
+    </div>
+  </div>
+  
+    <p>Les graphiques possèdent des données qui regoupent les 200 films ayant eu le plus d'entrées en France. Tous les films de ces graphiques sont sortis avant le 28 décembre 2021.</p>
+
+  <div class="div-gif_coulissant">
+    <img src="gif/patern.gif" class="patern" alt="paterne">
+    <img src="gif/patern.gif" class="patern1" alt="paterne">
+    <img src="gif/fond-coupe-png.gif" class="patern2" alt="paterne">
+    <img src="img/bande vierge.png" class="bande_vierge" alt="bande film cinéma 1">
+  </div>
+
+  <div class="camembert" id="top10">
+    <div id="top10films"></div>
+    <div id="top10real"></div>
+  </div>
+
+
+  <div class="nationalite">
+    <div id="mapmonde"></div>
+  </div>
+
+  <div class="materiel">
+    <div class="div-clap">  
+      <img src="gif/clap.gif" class="clap" alt="clap">
+        <div id="dots"></div> 
+        <img src="img/camera.png" class="camera" alt="camera">
+        <div id="chartHolder" style="width:600px; height:400px;"></div> 
+    </div>
+    
+  </div>
+  
+  <div class="div-disque" id="pourcentageSortie">
+    <img src="img/disque.png" class="disque" alt="disque">
+    <div id="pourcentage" class="rond"></div>
+  </div>
+
+
+  <div class="div-salle_cinema" >  
+    <div id="chartLine" class="ligne"></div>
+      <img src="img/salle cine.png" class="salle_cinema" id='ligne' alt="salle cinema">
+  </div>
+
+  <div id="titrelongueur">
+    <div id="titre"></div>
+  </div>
+  
+
+  <div class="div-bande_footer">    
+    <img src="gif/popcorn.gif" class="popcorn2" alt="pop corn">
+    <img src="gif/boisson.gif" class="boisson2" alt="boisson">
+    <img src="img/bande footer2.png" class="bande_footer" alt="bande film cinéma 1">
+  </div>
+
+
+    <script src="amcharts_5.3.11/amcharts5/index.js"></script>
+    <script src="amcharts_5.3.11/amcharts5/map.js"></script>
+    <script src="amcharts_5.3.11/amcharts5/geodata/worldLow.js"></script>
+    <script src="amcharts_5.3.11/amcharts5/themes/Animated.js"></script>
+    <script src="apexcharts-bundle/dist/apexcharts.min.js"></script>
+    <script src="js/donnee_film.js"></script>
+    <script src="js/reduces.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/am-chart.js"></script>
+    <script src="js/js-graphique.js"></script>
+    <script src="js/autreGraphiques.js"></script>
+    <script src="js/1_top10films.js"></script>
+    <script src="js/2_top10real.js"></script>
+    <script src="js/3_pourcentageSortie.js"></script>
+    <script src="js/4_map.js"></script>
+    <script src="js/5_dataChange.js"></script>
+    <script src="js/6_line.js"></script>
+    <script src="js/7_top10titrelong.js"></script>
+</body>
+</html>
